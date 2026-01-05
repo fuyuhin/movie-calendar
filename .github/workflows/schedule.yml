@@ -1,7 +1,8 @@
 name: 'Auto Pull Data'
 on:
   schedule:
-    - cron: '20 10 * * *' # utc+8=7,21
+    - cron: '25 2 * * *'
+  workflow_dispatch:
 env:
   API_HOSTNAME: ${{ vars.API_HOSTNAME }}
   API_PREFIX: ${{ vars.API_PREFIX }}
